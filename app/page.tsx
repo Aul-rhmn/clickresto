@@ -1,12 +1,13 @@
 import { ProductCard } from "@/components/product-card"
 import { SiteHeader } from "@/components/site-header"
 
+import { headers } from "next/headers"
+
 async function getProducts() {
 
-  const baseUrl =
-    process.env.NODE_ENV === "production"
-      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-      : "http://localhost:3000";
+ const host = headers().get("host")
+const protocol = process.env.NODE_ENV === "production" ? "https" : "http"
+const baseUrl = `${protocol}://${host}`
 
   const res = await fetch(`${baseUrl}/api/products`, {
     cache: "no-store",
