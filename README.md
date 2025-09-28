@@ -1,6 +1,7 @@
 # Click Resto — Technical Test MVP
 
-Public demo: deploy via Vercel Publish (landing: `/`, admin: `/admin`).
+Public demo: [https://clickrestos.vercel.app/](https://clickrestos.vercel.app/)
+Public Repo: [https://github.com/Aul-rhmn/clickresto](https://github.com/Aul-rhmn/clickresto)
 
 ## Stack & Architecture
 - Frontend: Next.js (App Router, shadcn/ui). Simple, clean, responsive.
